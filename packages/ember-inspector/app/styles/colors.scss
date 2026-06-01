@@ -1,89 +1,46 @@
-.theme-light {
+:root {
+  color-scheme: light dark;
+
   // Base
-  --base00: #ffffff;
-  --base01: #f3f3f3;
-  --base02: #ededed;
-  --base03: #d6d6d6;
-  --base04: #d1d1d1;
-  --base05: #cacaca;
-  --base06: #b3b3b3;
-  --base07: #a3a3a3;
-  --base08: #888888;
-  --base09: #777777;
-  --base10: #737373;
-  --base11: #676767;
-  --base12: #555555;
-  --base13: #404040;
-  --base14: #333333;
-  --base15: #222222;
+  --base00: light-dark(#ffffff, #242424);
+  --base01: light-dark(#f3f3f3, #242424);
+  --base02: light-dark(#ededed, #121212);
+  --base03: light-dark(#d6d6d6, #292929);
+  --base04: light-dark(#d1d1d1, #2e2e2e);
+  --base05: light-dark(#cacaca, #353535);
+  --base06: light-dark(#b3b3b3, #4c4c4c);
+  --base07: light-dark(#a3a3a3, #5c5c5c);
+  --base08: light-dark(#888888, #777777);
+  --base09: light-dark(#777777, #888888);
+  --base10: light-dark(#737373, #8c8c8c);
+  --base11: light-dark(#676767, #989898);
+  --base12: light-dark(#555555, #aaaaaa);
+  --base13: light-dark(#404040, #bfbfbf);
+  --base14: light-dark(#333333, #cccccc);
+  --base15: light-dark(#222222, #dddddd);
 
   // Spec
-  --spec00: #fffec2;
-  --spec01: #ff0000;
-  --spec02: #990000;
-  --spec03: #000099;
-  --spec04: #3f81ee;
-  --spec05: #7c027c;
-  --spec06: #ecf1fa;
+  --spec00: light-dark(#fffec2, #00013d);
+  --spec01: light-dark(#ff0000, #00ffff);
+  --spec02: light-dark(#990000, #66ffff);
+  --spec03: light-dark(#000099, #ffff66);
+  --spec04: light-dark(#3f81ee, #c07e11);
+  --spec05: light-dark(#7c027c, #83fd83);
+  --spec06: light-dark(#ecf1fa, #130e05);
   --spec07: #cd61a7;
   --spec08: #7fb56d;
   --spec09: #328509;
   --white: #ffffff;
   --inherit: inherit;
   --transparent: transparent;
-  --focus: #3f81ee;
+  --focus: light-dark(#3f81ee, #2270ec);
   --focus-text: var(--white);
-  --component-name: #1171e8;
+  --component-name: light-dark(#1171e8, #77beff);
   --component-brackets-selected: rgb(255 255 255 / 40%);
-  --component-attr: #db00a9;
-  --component-highlighted-bg: #f2f2f3;
-  --pill-bg: rgb(0 0 0 / 10%);
+  --component-attr: light-dark(#db00a9, #fe7ae9);
+  --component-highlighted-bg: light-dark(#f2f2f3, #333333);
+  --pill-bg: light-dark(rgb(0 0 0 / 10%), rgb(255 255 255 / 20%));
   --pill-bg-active: rgb(255 255 255 / 30%);
-  --warning-text: #735c0f;
-  --tracked-icon-bg: var(--spec03);
-}
-
-.theme-dark {
-  // Base
-  --base00: #242424;
-  --base01: #242424;
-  --base02: #121212;
-  --base03: #292929;
-  --base04: #2e2e2e;
-  --base05: #353535;
-  --base06: #4c4c4c;
-  --base07: #5c5c5c;
-  --base08: #777777;
-  --base09: #888888;
-  --base10: #8c8c8c;
-  --base11: #989898;
-  --base12: #aaaaaa;
-  --base13: #bfbfbf;
-  --base14: #cccccc;
-  --base15: #dddddd;
-
-  // Spec
-  --spec00: #00013d;
-  --spec01: #00ffff;
-  --spec02: #66ffff;
-  --spec03: #ffff66;
-  --spec04: #c07e11;
-  --spec05: #83fd83;
-  --spec06: #130e05;
-  --spec07: #cd61a7;
-  --spec08: #7fb56d;
-  --spec09: #328509;
-  --white: #ffffff;
-  --inherit: inherit;
-  --transparent: transparent;
-  --focus: #2270ec;
-  --focus-text: var(--white);
-  --component-name: #77beff;
-  --component-brackets-selected: rgb(255 255 255 / 40%);
-  --component-attr: #fe7ae9;
-  --component-highlighted-bg: #333333;
-  --pill-bg: rgb(255 255 255 / 20%);
-  --pill-bg-active: rgb(255 255 255 / 30%);
-  --warning-text: #8ca3f0;
-  --tracked-icon-bg: #5e5eb5;
+  --warning-text: light-dark(#735c0f, #8ca3f0);
+  --tracked-icon-bg: light-dark(#000099, #5e5eb5);
 }

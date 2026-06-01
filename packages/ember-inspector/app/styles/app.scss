@@ -4,8 +4,8 @@
 
 @layer inspector-base {
   @include meta.load-css("normalize.css/normalize.css");
-  @include meta.load-css("base");
   @include meta.load-css("colors");
+  @include meta.load-css("base");
   @include meta.load-css("utils");
 }
 
