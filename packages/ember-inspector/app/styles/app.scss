@@ -1,15 +1,22 @@
 @use "sass:meta";
 
-@include meta.load-css("normalize.css/normalize.css");
-@include meta.load-css("base");
-@include meta.load-css("colors");
-@include meta.load-css("utils");
-@include meta.load-css("component-tree");
-@include meta.load-css("deprecations");
-@include meta.load-css("dropdown");
-@include meta.load-css("mixin");
-@include meta.load-css("object-inspector");
-@include meta.load-css("route_tree");
-@include meta.load-css("whats-new");
-@include meta.load-css("ember-table");
-@include meta.load-css("ui/ui");
+@layer inspector-base, inspector-ui;
+
+@layer inspector-base {
+  @include meta.load-css("normalize.css/normalize.css");
+  @include meta.load-css("base");
+  @include meta.load-css("colors");
+  @include meta.load-css("utils");
+}
+
+@layer inspector-ui {
+  @include meta.load-css("component-tree");
+  @include meta.load-css("deprecations");
+  @include meta.load-css("dropdown");
+  @include meta.load-css("mixin");
+  @include meta.load-css("object-inspector");
+  @include meta.load-css("route_tree");
+  @include meta.load-css("whats-new");
+  @include meta.load-css("ember-table");
+  @include meta.load-css("ui/ui");
+}
